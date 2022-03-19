@@ -1,0 +1,360 @@
+@media(max-width:1460px){
+   .ibg img{
+      object-position: right;
+   }
+}
+@media(max-width:991px){
+   .intro__img img{
+      opacity: 0.5;
+   }
+   //shop
+   .shop{
+      &__row{
+         flex-wrap: wrap;
+         flex-direction: column;
+      }
+      .shop__column {
+        margin: 0px 0px 30px 0px;
+      }
+       &__item{
+          text-align: center;
+       }
+   }
+   //section01
+   .block-bottom{
+
+      &__column {
+         flex: 0 1 50%;
+         
+		}
+      
+      &__column:not(:last-child){
+         padding: 0px 30px 30px 0px;
+      }
+   }
+   //section02
+   .section02{
+      padding: 20px 0px  20px 0px;
+   }
+   .practice{
+
+      &__column {
+         flex:  0 1 50%;
+         padding:  0 34px 34px 0px ;
+      }
+   }
+   //section03
+   .section03 {
+      padding: 20px 0px 50px 0px
+   }
+   .video{
+
+		&__top {
+         margin-bottom: 30px;
+		}
+      &__row{
+         flex-direction: column-reverse;
+
+      }
+      &__colum {
+         flex: 0 1 100%;
+         align-items: stretch;
+		}
+      &__column-two {
+         margin-bottom: 40px;
+         flex: 1 1 42%
+		}
+
+   }
+   .most{
+      margin-top: 30px;
+      &__box {
+         padding-left: 0px;
+		}
+   }
+   //secttion04
+   .holi{
+      &__item {
+         flex: 0 1 33.333%;
+         padding: 5px 10px;
+		}
+   }
+   .middle-abs {
+      &__body {
+         margin: 0 -15px;
+      }
+   }
+   //section05
+   .section5 {
+      padding: 80px 0px 80px 0px;
+      background-color: #F3F3F3;
+   }
+   .get{
+      &__column {
+         flex: 0 1 100%;
+         &:not(:last-child){
+            margin-bottom: 30px;
+         }
+		}
+   }
+   .column-get{
+      &__item{
+         margin: 0 -15px;
+
+         &--mod{
+            padding:50px 40px;
+         }
+      }
+   }
+   
+}
+@media(max-width:767.98px){ 
+   .block-bottom{
+
+      &__column {
+         flex: 0 1 100%;
+         
+		}
+      
+      &__column:not(:last-child){
+         padding: 0px 0px 30px 0px;
+      }
+   }
+   .middle-abs{
+      &__titlr{
+         flex: 0 1 100%;
+         &:not(:last-child){
+            margin-bottom: 20px;
+         }
+      }
+      &__form{
+         flex: 0 1 100%;
+      }
+
+      &__email {
+         flex: 0 1 50%;
+      }
+      &__btn {
+         flex: 0 1 50%;
+      
+		}
+
+   }
+   //section7
+   .blog{
+      &__column{
+         flex: 0 33.333%;
+      }
+   }
+   //foter
+   .row {
+      flex-direction: column;
+      align-items: center;
+
+		&__copyright {
+         &:not(:last-child){
+            margin-bottom: 15px;
+         }
+		}
+
+		&__social {
+		}
+}
+
+   
+}
+@media(max-width:579.98px){
+   .fixed{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+     
+   }
+   .header__logo{
+      position: relative;
+      z-index: 10;
+   }
+   .header__nav{
+      position: fixed;
+      top:-100%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      padding: 110px;
+      overflow: auto;
+      transition: .4s linear;
+   }
+   .header__nav::after{
+      content: "";
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      transition: .4s linear;
+   }
+   .nav__list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .nav__link{
+      font-size: 30px;
+      &:hover{
+         text-decoration: underline;
+      }
+   }
+   .nav__item:not(:last-child){
+      margin: 0px 0px 45px 0px ;
+   }
+   // nav show
+   .show{
+      top: 0;
+
+      &::after{
+         content: "";
+         top: 0;
+      }
+   }
+   // btn
+   .header__btn{
+      width: 25px;
+      height: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+
+      &::before, &::after{
+         content: "";
+         width: 100%;
+         height: 2px;
+         background-color: #000;
+      }
+      & span{
+         width: 100%;
+         height: 2px;
+         background-color: #000;
+      }
+   }
+   // btn media
+   .cross{
+      &::before{
+         content: "";
+         width: 100%;
+         height: 2px;
+         background-color: #000;
+         transform: rotate(45deg);
+         position: relative;
+         top: 8px;
+         transition: .3s linear;
+      }
+      &::after{
+         content: "";
+         width: 100%;
+         height: 2px;
+         background-color: #000;
+         transform: rotate(-45deg);
+         position: relative;
+         top: -8px;
+         transition: .3s linear;
+      }
+      & span{
+         display: none;
+       }
+   }
+   //intro
+   .header__logo{
+      font-size: 40px;
+   }
+   .btn{
+      flex-wrap:wrap;
+
+      .btn__link:first-child{
+         margin: 0px 0px 10px 0px;
+       }
+
+      .btn__link{
+         flex: 0 1 100%;
+         font-size: 25px;
+      }
+   }
+   //section
+   .practice{
+
+      &__column {
+         flex:  0 1 100%;
+         padding:  0 0px 34px 0px ;
+      }
+   }
+    //secttion04
+    .holi{
+      &__top {
+         padding: 50px 0px 197px 0px;
+		}
+      &__item {
+         flex: 0 1 50%;
+         padding: 5px 10px;
+		}
+    
+   }
+   .middle-abs{
+      &__body{
+         padding: 15px 20px;
+      }
+
+      &__email {
+         flex: 0 1 100%;
+      }
+      &__btn {
+         flex: 0 1 100%;
+      
+		}
+   }
+      //section7
+      .blog{
+         &__column{
+            flex: 0 1 50%;
+         }
+      }
+  
+
+   
+}
+@media(max-width:469.98px){
+   .intro__title{
+      font-size: 40px;
+   }
+   .intro__content{
+      padding: 150px 0px 180px 0px; 
+   }
+      //section7
+      .blog{
+         &__column{
+            flex: 0 1 100%;
+            text-align: center;
+
+         }
+      }
+
+   
+}
+
+// min width
+@media(min-width:720px){
+   .business{
+      &__row {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: space-between;
+        
+         
+      }
+   }
+}
